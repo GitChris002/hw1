@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'boldo';
+    src: url('Fonts/gibson/GibsonBold.OTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'heavy';
+    src: url('Fonts/gibson/GibsonBoldIt.OTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'ital';
+    src: url('Fonts/gibson/GibsonSemiBdIt.OTF') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Immagini/imglogin.jpeg');
+    background-size: cover;
+    z-index: -1;
+}
+
+.login-container {
+    position: absolute;
+    width: 35%;
+    height: 52%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.login-text {
+    margin-bottom: 37%;
+    text-align: center;
+}
+
+.login-text p {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: 700;
+    font-family: boldo;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(5px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    padding: 20px; 
+    margin-top: -20px; 
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'boldo';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+select, input, #uspass {
+    background: rgba(255, 255, 255, 0.3);
+    height: 40px;
+    width: 250px;
+    border-radius: 40px;
+    border: none;
+    padding: 0px 20px;
+    color: white;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+select option {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+select:focus, input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+select option:hover, select option:focus {
+    background-color: rgba(81, 203, 238, 0.8);
+}
+
+#submit {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.errore {
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.register {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register p, .register a {
+    display: inline;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: ital;
+}
+
+.register a {
+    text-decoration: none;
+    color: #007bff;
+    margin-left: 5px;
+}
+
+.torna {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.torna p, .torna a {
+    display: inline;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: ital;
+}
+
+.torna a {
+    text-decoration: none;
+    color: #007bff;
+    margin-left: 5px;
+}
